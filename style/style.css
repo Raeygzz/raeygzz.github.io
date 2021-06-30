@@ -7,10 +7,13 @@ body {
 /*-----------------------Header CSS Start------------------------------*/
 #header {
   height: 100vh;
-  background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)),url(../img/background.jpg);
+  /* background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
+    url(../img/background.jpg); */
+  background: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)),
+    url(../img/background.jpg);
   background-position: center;
   background-size: cover;
-  background-attachment: fixed; 
+  background-attachment: fixed;
 }
 
 .user-box {
@@ -22,8 +25,9 @@ body {
 
 .user-box img {
   border-radius: 50%;
-  width: 250px;
-  border: 2px solid #6caed5;
+  /* width: 250px; */
+  width: 190px;
+  /* border: 2px solid #6caed5; */
 }
 
 .user-box h1 {
@@ -53,8 +57,12 @@ body {
 }
 
 @keyframes mover {
-  0%{transform: translateY(0);}
-  100%{transform: translateY(10px);}
+  0% {
+    transform: translateY(0);
+  }
+  100% {
+    transform: translateY(10px);
+  }
 }
 
 #app {
@@ -69,7 +77,6 @@ strong {
   font-weight: 700;
 }
 /*-----------------------Header CSS End------------------------------*/
-
 
 /*-----------------------About Start--------------------------------*/
 .about {
@@ -129,7 +136,6 @@ strong {
 }
 /*-----------------------About End--------------------------------*/
 
-
 /*-----------------------Resume Start-----------------------------*/
 .resume {
   margin-top: -50px;
@@ -148,7 +154,7 @@ strong {
 }
 
 .timeline:before {
-  content: '';
+  content: "";
   background: #555;
   display: inline-block;
   position: absolute;
@@ -182,7 +188,7 @@ strong {
 }
 
 .timeline li:before {
-  content: '';
+  content: "";
   background: #fff;
   display: inline-block;
   position: absolute;
@@ -194,7 +200,6 @@ strong {
   z-index: 1;
 }
 /*-----------------------Resume End-----------------------------*/
-
 
 /*-----------------------Services Start-----------------------------*/
 .services {
@@ -246,15 +251,15 @@ strong {
 }
 /*-----------------------Services End-----------------------------*/
 
-
 /*-----------------------Contact Start-----------------------------*/
 .contact {
   padding-top: 50px;
-  background: linear-gradient(rgba(0,0,0,0.8), rgba(0,0,0,0.8)),url(../img/contact.jpg);
+  background: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)),
+    url(../img/contact.jpg);
   background-position: center;
   background-size: cover;
   background-attachment: fixed;
-  color: #fff; 
+  color: #fff;
 }
 
 .contact .row {
@@ -302,7 +307,6 @@ strong {
 }
 /*-----------------------Contact End-----------------------------*/
 
-
 /*-----------------------Social Icons Start-----------------------------*/
 .social-icons {
   top: 50%;
@@ -324,7 +328,7 @@ strong {
   padding-top: 6px;
   margin-top: 5px;
   color: #fff;
-  background: #000;   
+  background: #000;
 }
 
 .social-icons ul li:hover {
